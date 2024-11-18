@@ -1,0 +1,115 @@
+/* Importa CSS do template */
+@import url('/style.css');
+
+/* Estilos gerais para o perfil */
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: rgba(255, 202, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o avatar */
+.profile-avatar {
+  flex: 1 1 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+
+/* Estilos para as informações do perfil */
+.profile-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+  color: #a30000;
+}
+
+.profile-details label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #a30000;
+}
+
+.profile-details input[type="text"],
+.profile-details input[type="password"],
+.profile-details input[type="file"],
+.profile-details input[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.profile-details input[type="text"],
+.profile-details input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #a30000;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background-color: rgba(255, 202, 0, 0.1);
+  outline: none;
+}
+
+.profile-details input[type="submit"] {
+    background-color: #a5c135;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #9ffa02;
+}
+
+.logout-button {
+  display: inline-block;
+  padding: 5px;  
+  color: #a30000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  align-self: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .profile {
+      flex-direction: column;
+      padding: 1rem;
+  }
+
+  .profile-avatar {
+      margin-bottom: 2rem;
+  }
+}
